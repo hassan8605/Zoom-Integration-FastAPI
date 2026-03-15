@@ -72,26 +72,10 @@ In your app, go to the **Scopes** tab and add:
 ---
 
 ## Installation
-
-Add to `requirements.txt`:
-
-```
-httpx==0.27.0
-pydantic-settings==2.2.1
-```
-
 Install:
 
 ```bash
 pip install -r requirements.txt
-```
-
-Register the router in `main.py`:
-
-```python
-from src.zoom.router import router as zoom_router
-
-app.include_router(zoom_router, prefix="/api")
 ```
 
 ---
